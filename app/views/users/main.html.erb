@@ -1,0 +1,49 @@
+<header>
+<h1>Hello, <%= current_user.name %></h1>
+<button><a href="/logout">Logout</a></button>
+
+<button><a href="/you">View Profile</a></button>
+</header>
+<br>
+<div class="content">
+    <div class="row">
+    <div class="col-md-3 ">
+    <div class="side genre">
+        <p>Genre Select</p>
+        <ul>
+            <li><a href="">Action</a></li>
+            <li><a href="">Comedy</a></li>
+            <li><a href="">Horror</a></li>
+            <li><a href="">Drama</a></li>
+            <li><a href="">Action</a></li>
+
+        </ul>
+    </div>
+    </div>
+    <div class="col-md-3 ">
+    <div class="main_content">
+        <h3>Most Recent Popular Movies</h3>
+        <div class="movies">
+            <% (0..25).each do |i| %>
+            <div class="image <%= i %>">
+            
+            </div>
+            <% end %>
+        </div>
+    </div>
+    </div>
+<div class="col-md-4 ">
+    <div class="yMovies">
+        <p>Your Movies</p>
+        <ul>
+            <li><a href="">Movie</a></li>
+            <li><a href="">Movie</a></li>
+            <li><a href="">Movie</a></li>
+            <li><a href="">Movie</a></li>
+            <li><a href="">Movie</a></li>
+
+        </ul>
+    </div>
+    </div>
+    </div>
+</div>

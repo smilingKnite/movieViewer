@@ -1,0 +1,99 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require bootstrap.min
+ *= require_tree .
+ *= require_self
+ */
+body {
+    width: 100%;
+    padding: 0px 5px ;
+    margin: auto;
+}
+header {
+    border: 2px solid black;
+    border-radius: 25px;
+    background: linear-gradient(to bottom right, white, black);
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+header button {
+    display: inline-block;
+}
+.main {
+    background-color: aqua;
+    text-align: center;
+}
+.form {
+    background-color: aqua;
+    width: 325px;
+    text-align: left;
+    border: 2px solid black;
+    padding: 5px;
+    display: inline-block;
+}
+.form input {
+    display: block;
+}
+.sub {
+    margin: 5px;
+    display: block;
+    padding: 3px;
+    background: linear-gradient(to bottom, white, rgb(223, 64, 53))
+}
+.cow {
+    width: 325px;
+    background-color: red; 
+}
+
+
+.image {
+    width: 50px;
+    height: 75px;
+    background-color: red;
+}
+
+.side {
+    width: 200px;
+    border: 2px solid black;
+    padding: 15px;
+    display: inline-block;
+}
+.main_content {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    /* height: 380px; */
+    width: 500px;
+    /* overflow: hidden; */
+    /* margin: auto; */
+}
+.image {
+    display: inline-block;
+}
+.yMovies {
+    display: inline-block;
+    float: right;
+    width: 200px;
+    padding: 15px;
+    border: 2px solid black;
+    text-align: center
+}
+.index {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    /* height: 380px; */
+    float: right;
+    width: 400px;
+}
